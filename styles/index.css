@@ -177,16 +177,31 @@ header .logo
     cursor: pointer;
 }
 
+.art li {
+  transition: 0.6s;
+}
+
 #staff {
   width: auto;
+}
+
+#staff article {
+  padding: 40px;
 }
 
 #staff strong {
   letter-spacing: 5px;
 }
 
-#staff article {
-  padding: 40px;
+#staff li:hover {
+  font-size: 18px;
+  line-height: 30px;
+  text-shadow: 2px 3px 5px #000000de;
+  
+}
+
+#staff abbr{
+  text-decoration: none;
 }
 
 .contcard {
@@ -285,7 +300,7 @@ header .logo
   letter-spacing: 2px;
 }
 hr {
-  border-color: rgb(74, 117, 159);
+  border-color: rgb(74 117 159 / 38%);
 }
 
 .linea {
