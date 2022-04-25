@@ -182,11 +182,17 @@ header .logo
 }
 
 #staff {
-  width: auto;
+  width: 55%;
+   
 }
 
 #staff article {
-  padding: 40px;
+  padding: 42px;
+  background-image: url("../img/staff.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 0 9px 0px rgb(0 0 0 / 55%);
 }
 
 #staff strong {
@@ -204,10 +210,14 @@ header .logo
   text-decoration: none;
 }
 
+#staff p {
+  margin: 33px 00;
+}
 .contcard {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .social
@@ -269,12 +279,14 @@ header .logo
 .card {
   color: white;
   z-index: 10;
-  width: 25%;
-  border: #ffffff82 1px solid;;
-  /* border-radius: 8px; */
+  width: 24%;
+  /* border: #ffffff82 1px solid;; */
+  border-radius: 4px;
   text-align: center;
   padding: 6px;
-  box-shadow: 0 0 9px 0px rgb(255 255 255 / 18%);
+  /* box-shadow: 0 0 9px 0px rgb(255 255 255 / 18%); */
+  box-shadow: 0 0 9px 0px rgb(0 0 0 / 55%);
+  margin: 6px 0;
 }
 
 .card img {
@@ -312,6 +324,7 @@ hr {
   z-index: 1;
 }
 
+
 /*FORMULARIO*/
 .final {
   display: flex;
@@ -325,13 +338,13 @@ margin-top: 21px;
 
 #form {
   /* display: inline-grid; */
-  border: #fffffffc 1px solid;
-  padding: 10px;
+  border: #00000000 1px solid;
+  padding: 30px;
   /* border-radius: 18px; */
   /* height: 350px; */
   width: 100%;
   /* border-radius: 1px 15px; */
-  box-shadow: 0 0 11px 0px rgba(101, 101, 101, 0.53);
+  box-shadow: 0 0 11px 0px rgb(0 0 0 / 48%);
   color: white;
 }
 label {
@@ -444,7 +457,7 @@ textarea {
 }
 
 .card {
-  width:50%;
+  width:48%;
   border:#ffffff00 0px solid;
 }
 
@@ -470,9 +483,14 @@ textarea {
   
 } 
 
+#staff {
+  width: auto;
+}
+
 #staff article {
   padding: 12px;
 }
+
 
 .showcase video{
   height: 400px;
