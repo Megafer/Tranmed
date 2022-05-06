@@ -120,6 +120,7 @@ header .logo
   font-size: 4em;
   font-weight: 700;
   color: #fff;
+  text-shadow: 3px 3px 6px #000000b8;
   line-height: 1em;
   text-transform: uppercase; letter-spacing: 4px;
 }
@@ -216,15 +217,24 @@ header .logo
 
 
 #staff {
-  width: 55%;
+  width: 85%;
    
+}
+
+#staff .nos {
+  background-image: linear-gradient( rgb(0, 0, 0, 25%), rgb(0, 0, 0, 25%)), url("../img/staff.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 9px 0px rgba(0 0 0 / 50%);
+  padding: 12px;
+  border-radius : 4px;
 }
 
 #staff article {
   padding: 42px;
-  background-image: url("../img/staff.jpg");
+  /* background-image: url("../img/staff.jpg");
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   border-radius: 10px;
   box-shadow: 0 0 9px 0px rgb(0 0 0 / 55%);
 }
@@ -245,7 +255,7 @@ header .logo
 }
 
 #staff p {
-  margin: 33px 00;
+  margin: 3px 00;
 }
 
 .contcard {
@@ -266,6 +276,16 @@ header .logo
   border-radius: 8px ;
   box-shadow: 0 0 9px 0px rgb(0 0 0 / 55%);
 }
+
+#elegirnos .nos {
+  background-image: linear-gradient( rgb(0, 0, 0, 25%), rgb(0, 0, 0, 25%)), url("../img/elige.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 9px 0px rgba(0 0 0 / 50%);
+  padding: 12px;
+  border-radius : 4px;
+}
+
 
 details {
   font-size: 1.1em;
@@ -342,12 +362,13 @@ details[open]{
 
 .card {
   color: white;
+  background-color: white;
   z-index: 10;
   width: 24%;
   /* border: #ffffff82 1px solid;; */
   border-radius: 4px;
   text-align: center;
-  padding: 6px;
+  /* padding: 6px; */
   /* box-shadow: 0 0 9px 0px rgb(255 255 255 / 18%); */
   box-shadow: 0 0 9px 0px rgb(0 0 0 / 55%);
   margin: 6px 0;
@@ -368,6 +389,12 @@ details[open]{
   width: 90%;
 }
 
+.card p {
+  color: #000;
+  border-top: outset 0.5px #b7b7b7;
+  margin: 4px;
+}
+
 .blog {
   /* width: 80%; */
   /* background-color:white; */
@@ -379,11 +406,15 @@ details[open]{
   box-shadow: 3px 3px 9px 0px rgb(0 0 0 / 32%);
 }
 
-/*  Probar esto si va
-.mes {
-  background: linear-gradient(28deg, #4a759f, #ffffff54, #4a759f);
-  padding : 10px;
-} */
+#blog .nos {
+  background-image: linear-gradient( rgb(0, 0, 0, 25%), rgb(0, 0, 0, 25%)), url("../img/art.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 9px 0px rgb(0 0 0 / 50%);
+  padding: 12px;
+  border-radius: 4px;
+}
+
 
 hr {
   border-color: rgb(74 117 159 / 38%);
@@ -398,6 +429,14 @@ hr {
   z-index: 1;
 }
 
+#contacto .nos {
+  background-image: linear-gradient( rgb(0, 0, 0, 25%), rgb(0, 0, 0, 25%)), url("../img/contac.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 9px 0px rgba(0 0 0 / 50%);
+  padding: 12px;
+  border-radius : 4px;
+}
 
 /*FORMULARIO*/
 .final {
