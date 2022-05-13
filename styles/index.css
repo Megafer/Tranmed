@@ -325,7 +325,6 @@ details[open]{
 {
   display: inline-block;
   margin-right: 20px;
-  filter: invert(1);
   transform: scale(0.5);
   transition: 0.5s;
 }
@@ -665,4 +664,28 @@ input, textarea {
     column-gap: 20px;
   
   }
+
+   .whatsapp {
+     /* position:fixed; */
+    
+    width:60px;
+    height:60px;
+    /* bottom:40px; */
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100; 
+    box-shadow: 3px 3px 7px 0px #000000a1;
+    transition: 0.3s;}
+   
+  .whatsapp:hover {
+    box-shadow: -3px -3px 7px 0px #000000;
+    transition: 0.3s;
+    }
+    
+    .whatsapp-icon {
+      margin-top:13px;
+    } 
 }
