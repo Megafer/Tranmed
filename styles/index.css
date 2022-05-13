@@ -237,6 +237,10 @@ header .logo
   background-repeat: no-repeat; */
   border-radius: 10px;
   box-shadow: 0 0 9px 0px rgb(0 0 0 / 55%);
+  /* column-count: 2;
+  column-width: auto;
+  column-gap: 20px; */
+
 }
 
 #staff strong {
@@ -556,11 +560,7 @@ textarea {
             transform: scale(1);
   }
 }
-@media (min-width: 1100px) {
-  #staff p{
-    margin-top: 65px;
-  }
-}
+
 
 @keyframes sweep {
   0% {
@@ -585,6 +585,14 @@ textarea {
   header .logo
 {
   width: 65%;
+}
+
+#staff article {
+
+  column-count: 2;
+  column-width: auto;
+  column-gap: 20px;
+
 }
 
 .card {
@@ -619,7 +627,7 @@ textarea {
 }
 
 #staff article {
-  padding: 12px;
+  padding: 35px;
 }
 
 .elige {
@@ -647,4 +655,14 @@ textarea {
 input, textarea {
   width: 100%;
 }
+}
+
+@media (min-width: 1100px) {
+  #staff article {
+
+    column-count: 2;
+    column-width: auto;
+    column-gap: 20px;
+  
+  }
 }
