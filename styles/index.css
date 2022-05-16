@@ -540,6 +540,35 @@ textarea {
   transform: rotate(-45deg);
 }
 
+.fa.fa-whatsapp {
+  transition:  0.5s; 
+    
+  }
+
+  .fa.fa-whatsapp:hover {
+    color: #25d366
+   
+  }
+
+  .fa.fa-facebook { 
+    transition:  0.5s;
+  }
+
+  .fa.fa-facebook:hover {
+    color: #3b5998
+  }
+
+#fin {
+  text-align: center;
+  padding:0px;
+  width: 90%;
+  margin: 10px;
+  color: #ffffff;
+}
+.fin {
+  width: 100%;
+  text-align: -webkit-center;
+}
 
 
 @-webkit-keyframes scale-up-center {
@@ -665,27 +694,29 @@ input, textarea {
   
   }
 
-   .whatsapp {
+
+
+   /* .whatsapp { */
      /* position:fixed; */
     
-    width:60px;
-    height:60px;
+    /* width:60px;
+    height:60px; */
     /* bottom:40px; */
-    background-color:#25d366;
+    /* background-color:#25d366;
     color:#FFF;
     border-radius:50px;
     text-align:center;
     font-size:30px;
     z-index:100; 
     box-shadow: 3px 3px 7px 0px #000000a1;
-    transition: 0.3s;}
+    transition: 0.3s;} */
    
-  .whatsapp:hover {
+  /*.whatsapp:hover {
     box-shadow: -3px -3px 7px 0px #000000;
     transition: 0.3s;
     }
     
     .whatsapp-icon {
       margin-top:13px;
-    } 
+    } */
 }
