@@ -320,12 +320,15 @@ details[open]{
 .social li
 {
   list-style: none;
+  font-size: 50px;
 }
 .social li a
 {
   display: inline-block;
   margin-right: 20px;
-  transform: scale(0.5);
+  /* filter: invert(1); */
+  color: #fff;
+  transform: scale(0.7);
   transition: 0.5s;
 }
 .social li a:hover
