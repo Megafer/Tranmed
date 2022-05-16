@@ -590,10 +590,10 @@ textarea {
 }
 
 #staff article {
-
-  column-count: 2;
+  padding: 21px;
+/*   column-count: 2;
   column-width: auto;
-  column-gap: 20px;
+  column-gap: 20px; */
 
 }
 
@@ -628,9 +628,6 @@ textarea {
   width: auto;
 }
 
-#staff article {
-  padding: 35px;
-}
 
 .elige {
   padding: 13px;
@@ -659,7 +656,7 @@ input, textarea {
 }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 992px) {
   #staff article {
 
     column-count: 2;
