@@ -309,6 +309,16 @@ details[open]{
   animation :none;
 } */
 
+.noti {
+  width: 85%;
+  height: auto;
+  display: block;
+  margin: 5% auto;
+  opacity: 0.9;
+  box-shadow: 3px 3px 7px 3px rgb(255 255 255 / 34%);
+  border-radius: 8px;
+}
+
 .social
 {
   /* position: absolute; */
@@ -696,6 +706,10 @@ textarea {
 input, textarea {
   width: 100%;
 }
+/* .noti {
+  width: 60%;
+  margin: 3% auto;
+} */
 }
 /* aca carga en pantalla grande mas de 992px en adelante */
 @media (min-width: 992px) {
@@ -708,6 +722,10 @@ input, textarea {
   }
   [data-title]::after{
     margin-left: 10px;
+  }
+  .noti {
+    width: 50%;
+    margin: 3% auto;
   }
 
 
