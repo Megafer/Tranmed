@@ -192,13 +192,14 @@ header .logo
 }
 [data-title]:after {
   content: attr(data-title);
-  background-color: #18385e69;
+  background-color: #18385ec9;
   color: #fff;
   font-size: 14px;
   position: absolute;
   padding: 3px 20px;
   /* bottom: -1.6em; */
-  margin-left: 10px;
+  margin-left: -144px;
+  margin-bottom: -20px;
   left: 100%;
   white-space: nowrap;
   box-shadow: 1px 1px 3px #222222;
@@ -386,6 +387,7 @@ details[open]{
   margin: 5px;
   opacity: 0.8; cursor: pointer;
   transition: 0.3s;
+  
 
 }
 
@@ -393,6 +395,7 @@ details[open]{
   opacity: 1;
   transition: .3s ease-in-out;
   width: 90%;
+  
 }
 
 .card p {
@@ -400,6 +403,12 @@ details[open]{
   border-top: outset 0.5px #b7b7b7;
   margin: 4px;
 }
+
+.card a:hover{
+  background-color: white;
+  text-decoration: none;
+}
+
 
 .blog {
   /* width: 80%; */
@@ -604,7 +613,7 @@ textarea {
     transform: translateY(0);
 }
 }
-
+/* Esto carga hasta la ventana de 991px--para mas grande ir al otro */
 @media (max-width: 991px)
 {
 /*   .showcase,
@@ -616,6 +625,10 @@ textarea {
   header .logo
 {
   width: 65%;
+}
+
+[data-title]::after{
+  margin-left: 10px;
 }
 
 #staff article {
@@ -684,7 +697,7 @@ input, textarea {
   width: 100%;
 }
 }
-
+/* aca carga en pantalla grande mas de 992px en adelante */
 @media (min-width: 992px) {
   #staff article {
 
@@ -693,7 +706,9 @@ input, textarea {
     column-gap: 20px;
   
   }
-
+  [data-title]::after{
+    margin-left: 10px;
+  }
 
 
    /* .whatsapp { */
