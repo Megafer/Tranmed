@@ -728,6 +728,10 @@ input, textarea {
     margin: 3% auto;
   }
 
+.blog {
+  /* width: 85%; */
+  margin: 1% 4%;
+}
 
    /* .whatsapp { */
      /* position:fixed; */
