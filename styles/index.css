@@ -214,11 +214,7 @@ header .logo
 /* [data-title] {
   /* position: relative; }*/
 
-
 /* terminaprueba */
-
-
-
 #staff {
   width: 99%;
    
@@ -243,7 +239,6 @@ header .logo
   /* column-count: 2;
   column-width: auto;
   column-gap: 20px; */
-
 }
 
 #staff strong {
@@ -254,7 +249,6 @@ header .logo
   font-size: 18px;
   line-height: 30px;
   text-shadow: 2px 3px 5px #000000de;
-  
 }
 
 #staff abbr{
@@ -264,7 +258,6 @@ header .logo
 article abbr {
   display: grid;
 }
-
 
 #staff p {
   margin: 3px 00;
@@ -298,7 +291,6 @@ article abbr {
   border-radius : 4px;
 }
 
-
 details {
   font-size: 1.1em;
   line-height: 30px;
@@ -317,7 +309,7 @@ details[open]{
 } */
 
 .noti {
-  width: 85%;
+  width: 75%;
   height: auto;
   display: block;
   margin: 5% auto;
@@ -325,6 +317,14 @@ details[open]{
   box-shadow: 3px 3px 7px 3px rgb(255 255 255 / 34%);
   border-radius: 8px;
 }
+img.noti{
+  transition: all 2s;
+}
+
+img.noti:hover {
+  width: 99%;
+}
+
 
 .social
 {
@@ -735,6 +735,14 @@ input, textarea {
   .noti {
     width: 50%;
     margin: 3% auto;
+  }
+
+  img.noti{
+    transition: all 2s;
+  }
+
+  img.noti:hover {
+    width: 80%;
   }
 
 .blog {
