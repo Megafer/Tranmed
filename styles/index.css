@@ -6,11 +6,12 @@
   box-sizing: border-box;
   /* font-family: 'Poppins', sans-serif; */
   font-family: 'Lato', sans-serif;
-  overflow: auto;
 }
 
 html {
   scroll-behavior: smooth;
+  /* overflow: auto; */
+
 }
 
 header
@@ -196,12 +197,12 @@ header .logo
   background-color: #18385ec9;
   color: #fff;
   font-size: 14px;
-  position: absolute;
+  /* position: absolute; */
   padding: 3px 20px;
   /* bottom: -1.6em; */
-  margin-left: -144px;
-  margin-bottom: -20px;
-  left: 100%;
+  /* margin-left: -144px; */
+  /* margin-bottom: -20px; */
+  /* left: 100%; */
   white-space: nowrap;
   box-shadow: 1px 1px 3px #222222;
   opacity: 0;
@@ -210,18 +211,18 @@ header .logo
   visibility: hidden;
   
 }
-[data-title] {
-  position: relative;
-}
+/* [data-title] {
+  /* position: relative; }*/
+
 
 /* terminaprueba */
 
 
 
-#staff {
-  width: 85%;
+/* #staff {
+  width: 95%;
    
-}
+} */
 
 #staff .nos {
   background-image: linear-gradient( rgb(0, 0, 0, 25%), rgb(0, 0, 0, 25%)), url("../img/staff.jpg");
@@ -233,7 +234,7 @@ header .logo
 }
 
 #staff article {
-  padding: 42px;
+  padding: 24px;
   /* background-image: url("../img/staff.jpg");
   background-size: contain;
   background-repeat: no-repeat; */
@@ -259,6 +260,11 @@ header .logo
 #staff abbr{
   text-decoration: none;
 }
+
+article abbr {
+  display: grid;
+}
+
 
 #staff p {
   margin: 3px 00;
@@ -721,8 +727,9 @@ input, textarea {
     column-gap: 20px;
   
   }
-  [data-title]::after{
-    margin-left: 10px;
+  [data-title]:after{
+    /* margin-left: 5px; */
+    padding: 0;
   }
   .noti {
     width: 50%;
