@@ -388,7 +388,7 @@ img.noti:hover {
   color: white;
   background-color: white;
   z-index: 10;
-  width: 24%;
+  width: 48%;
   /* border: #ffffff82 1px solid;; */
   border-radius: 4px;
   text-align: center;
@@ -630,7 +630,7 @@ textarea {
     transform: translateY(0);
 }
 }
-/* Esto carga hasta la ventana de 991px--para mas grande ir al otro */
+/* Esto carga hasta la ventana de 991px como maximo --para mas grande ir al otro */
 @media (max-width: 991px)
 {
 /*   .showcase,
@@ -718,7 +718,7 @@ input, textarea {
   margin: 3% auto;
 } */
 }
-/* aca carga en pantalla grande mas de 992px en adelante */
+/* aca carga en pantalla grande mas de 992px en adelante, debe tener min 992 para arriba */
 @media (min-width: 992px) {
   #staff article {
 
@@ -749,6 +749,12 @@ input, textarea {
   /* width: 85%; */
   margin: 1% 4%;
 }
+
+.card {
+  width: 24%;
+}
+
+
 
    /* .whatsapp { */
      /* position:fixed; */
