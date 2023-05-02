@@ -166,11 +166,11 @@ header .logo
 }
 
 .art {
-  padding: 12px;
-    margin: 5px;
-    background-color: #ffffff38;
-    /* border-radius: 10px; */
-    box-shadow: 0 0 9px 0px rgb(0 0 0 / 55%);
+  padding: 14px;
+  margin: 5px;
+  background-color: #ffffff38;
+  /* border-radius: 10px; */
+  box-shadow: 0 0 9px 0px rgb(0 0 0 / 55%);
     
 }
 
@@ -630,6 +630,8 @@ textarea {
     transform: translateY(0);
 }
 }
+
+
 /* Esto carga hasta la ventana de 991px como maximo --para mas grande ir al otro */
 @media (max-width: 991px)
 {
@@ -718,20 +720,21 @@ input, textarea {
   margin: 3% auto;
 } */
 }
+
+
 /* aca carga en pantalla grande mas de 992px en adelante, debe tener min 992 para arriba */
 @media (min-width: 992px) {
   #staff article {
-
     column-count: 2;
     column-width: auto;
     column-gap: 20px;
     padding: 20px 38px;
-  
   }
   [data-title]:after{
     /* margin-left: 5px; */
     padding: 0;
   }
+
   .noti {
     width: 50%;
     margin: 3% auto;
@@ -754,6 +757,9 @@ input, textarea {
   width: 24%;
 }
 
+.art {
+  padding: 30px;
+}
 
 
    /* .whatsapp { */
