@@ -189,7 +189,7 @@ header .logo
 
 [data-title]:hover:after {
   opacity: 1;
-  transition: all 0.1s ease 0.5s;
+  transition: all 0.6s ;
   visibility: visible;
 }
 [data-title]:after {
@@ -199,6 +199,7 @@ header .logo
   font-size: 14px;
   /* position: absolute; */
   padding: 3px 20px;
+  transition: all 0.6s ;
   /* bottom: -1.6em; */
   /* margin-left: -144px; */
   /* margin-bottom: -20px; */
@@ -211,8 +212,7 @@ header .logo
   visibility: hidden;
   
 }
-/* [data-title] {
-  /* position: relative; }*/
+
 
 /* terminaprueba */
 #staff {
@@ -302,6 +302,15 @@ details {
 
 details[open]{
   animation: sweep .5s ease-in-out;
+}
+
+summary {
+  transition: all 0.6s ease-in-out;
+}
+
+summary:hover {
+letter-spacing: 3px;
+transition: all 0.6s ease-in-out;
 }
 
 /* details[close]{
@@ -540,6 +549,19 @@ textarea {
   border:0px solid #d4d1d1;
 }
 
+/* BOTON DE SERVICION */
+.bt1{
+  transition: all 0.8s;
+  padding:3px ;
+}
+
+.bt1:hover {
+padding: 3px 80px;
+transition: all 0.8s;
+cursor: pointer;
+}
+
+
 /* Boton Subir */
 /*botón up*/
 .boton-subir{
@@ -594,6 +616,16 @@ textarea {
 .fin {
   width: 100%;
   text-align: -webkit-center;
+}
+
+.fer {
+  /* text-align: right; */
+    padding: 0px;
+    /* width: 90%; */
+    margin: 10px;
+    color: #ffffff;
+    font-size: 15px;
+
 }
 
 
@@ -743,9 +775,10 @@ input, textarea {
   img.noti{
     transition: all 2s;
   }
-
+/* AGRANDA LAS IMAGENES DE NOTICIA AL PASAR EL MOUSE */
   img.noti:hover {
-    width: 80%;
+    width: 60%;
+    cursor: pointer;
   }
 
 .blog {
