@@ -797,6 +797,11 @@ input, textarea {
     padding: 0;
   }
 
+#staff p {
+  line-height: 12px;
+
+}
+
   .noti {
     width: 50%;
     margin: 3% auto;
@@ -823,6 +828,10 @@ input, textarea {
 .art {
   padding: 30px;
 }
+
+/* .art ol {
+  line-height: 38px;
+} */
 
 
    /* .whatsapp { */
