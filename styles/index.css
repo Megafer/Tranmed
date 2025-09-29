@@ -113,15 +113,30 @@ section[id] {
 
 .nav-menu ul li a {
   display: block;
-  padding: 10px;
+  /* padding: 10px; */
   text-decoration: none;
   color: var(--color-texto-claro);
-  transition: var(--transicion-suave);
+  transition: all var(--transicion-suave);
+  transform: scale(1);
+}
+
+.nav-menu ul li:hover {
+  background-color: var(--color-secundario); 
+  /* Aseguramos la transición del fondo en el LI */
+  transition: background-color var(--transicion-suave); 
 }
 
 .nav-menu ul li a:hover {
-  background-color: var(--color-secundario);
+  /* background-color: var(--color-secundario); */
+  transform: scale(1.05);
 }
+/* ACA */
+.nav-menu ul li {
+  list-style: none;
+  /* AGREGAMOS EL RELLENO (PADDING) AQUI */
+  padding: 10px; /* Este era el valor que tenías en el enlace, lo ponemos aquí */
+}
+
 
 /* Hero Section */
 .hero {
@@ -193,13 +208,16 @@ section[id] {
   font-weight: 500;
   margin-top: 10px;
   border-radius: 5px;
-  transition: var(--transicion-suave);
+  transition: all 0.3s ease-in-out !important; 
 }
 
 .btn:hover {
-  letter-spacing: 2px;
-  background-color: var(--color-secundario);
-  color: var(--color-texto-claro);
+ /* Nuevo efecto suave */
+ background-color: var(--color-secundario); /* Cambia el color de fondo */
+ color: var(--color-texto-claro);          /* Cambia el color de la letra */
+ letter-spacing: 2px;          
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Añade una sombra sutil */
+
 }
 
 .linea {
