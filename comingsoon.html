@@ -100,6 +100,75 @@ body {
             opacity: 0.9;
         }
 
+/* Estilos para el Tooltip Personalizado */
+.tooltip-container {
+    position: relative; /* Clave: necesario para posicionar el tooltip */
+}
+
+/* El contenido del tooltip (lo que se muestra al hacer hover) */
+.tooltip-container::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%; /* CLAVE: Posiciona el tooltip justo debajo del botón */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px; /* Separación de 10px entre el botón y el tooltip */
+
+    
+    /* Estilos profesionales */
+    background-color: var(--color-acento); /* Color acento (dorado/claro) */
+    color: var(--color-principal); /* Texto en color principal (azul oscuro) */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    
+    /* Control de visibilidad */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 999;
+}
+
+/* Mostrar el tooltip al hacer hover */
+.tooltip-container:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Pequeño triángulo */
+.tooltip-container::after {
+    content: "";
+    position: absolute;
+    
+    /* La posición es donde empieza el GLOBO DE TEXTO */
+    top: 100%; 
+    left: 50%;
+    
+    /* CRÍTICO: Rotamos para que apunte hacia arriba (45deg) */
+    transform: translateX(-50%) rotate(45deg);
+    
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    
+    /* MUY CRÍTICO: Tiramos el triángulo hacia arriba para que se pegue al botón */
+    margin-top: -5px; 
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 998;
+}
+
+/* Mostrar el triángulo al hacer hover */
+.tooltip-container:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
         /* Animación de entrada */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
@@ -134,9 +203,10 @@ body {
 
         <p>&#127970 Sede Central - Av. del Libertador 222 Piso 2º B  | CABA <br>
       &#x1F4DE Teléfono - (54 11) 4322 - 3221 y Líneas rotativas <br><br>
-        <a href="mailto:info@tranmed.com.ar" class="btn-contact" title="info@tranmed.com.ar">
-            Contáctenos vía mail
-        </a>
+     
+   <a href="mailto:info@tranmed.com.ar" class="btn-contact tooltip-container" data-tooltip="info@tranmed.com.ar">
+    Contáctenos vía mail </a>
+       
     </div>
 </body>
 </html>
