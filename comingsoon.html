@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranmed S.A. | Sitio en Construcción</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Variables y Reset Básico */
+        :root {
+            --color-principal: #18385e; /* Azul Oscuro (Seriedad) */
+            --color-secundario: #4a759f; /* Azul Medio (Confianza) */
+            --color-acento: #d8eaf8; /*  (Profesionalismo) */
+            --color-texto-claro: #ffffff;
+--fuente-titulo: 'Montserrat', sans-serif; /* ¡CAMBIADO! */
+    --fuente-cuerpo: 'Open Sans', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos del Cuerpo */
+body {
+    font-family: var(--fuente-cuerpo);
+    color: var(--color-texto-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    
+    /* CRÍTICO: CAMBIAMOS LA DIRECCIÓN DEL DEGRADADO A DIAGONAL (45deg) */
+    background-image: linear-gradient(45deg, var(--color-principal), var(--color-secundario), var(--color-principal));
+    
+    /* TAMAÑO Y ANIMACIÓN SE MANTIENEN IGUAL */
+    background-size: 400% 400%;
+    animation: animarFondo 40s ease infinite alternate;
+}
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 700px;
+            padding: 40px;
+            background-color: rgba(24, 56, 94, 0.9); /* Fondo semitransparente del color principal */
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-out; /* Animación sutil de entrada */
+        }
+
+        /* Títulos */
+        h1 {
+            font-family: var(--fuente-titulo);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--color-acento); /* Título en color acento para destacar */
+        }
+
+        h2 {
+            font-family: var(--fuente-titulo);
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: var(--color-texto-claro);
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* Botón de Contacto (Manteniendo el estilo del sitio principal) */
+        .btn-contact {
+            display: inline-block;
+            background-color: var(--color-acento);
+            color: var(--color-principal);
+            padding: 10px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .btn-contact:hover {
+            background-color: #ffffff; /* Tono más claro al pasar el mouse */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Logo (Estilo Sutil) */
+        .logo-placeholder {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+/* 1. Definición de la animación de fondo */
+@keyframes animarFondo {
+  0% {
+    background-position: 0% 50%; 
+  }
+  50% {
+    background-position: 100% 50%; 
+  }
+  100% {
+    background-position: 0% 50%; 
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/Log1c.png" alt="Logo Tranmed S.A." class="logo-placeholder">
+
+        <h1>¡Próximamente!</h1>
+        <h2>Pronto vas a poder disfrutar de la nueva <br>Web de TRANMED, totalmente renovada y actualizada.</h2>
+        
+        <p>Nuestro equipo está realizando las últimas actualizaciones para ofrecerle una plataforma más moderna, profesional y eficiente para sus consultas.</p>
+        
+        <p>Próximamente podrá acceder al nuevo sitio.<br> Agradecemos su paciencia.</p>
+
+        <p>&#127970 Sede Central - Av. del Libertador 222 Piso 2º B  | CABA <br>
+      &#x1F4DE Teléfono - (54 11) 4322 - 3221 y Líneas rotativas <br><br>
+        <a href="mailto:info@tranmed.com.ar" class="btn-contact">
+            Contáctenos vía mail
+        </a>
+    </div>
+</body>
+</html>
