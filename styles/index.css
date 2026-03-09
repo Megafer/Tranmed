@@ -17,20 +17,33 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */ /* COMENTA ESTA LÍNEA O BÓRRALA */
+  overflow-x: hidden;
 }
 
 body {
   background: linear-gradient(180deg, var(--color-secundario), var(--color-principal), var(--color-secundario));
   color: var(--color-texto-claro);
 }
-a,
+
+/* Evitamos que el header tape los títulos al navegar */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Específicamente para la sección de contacto si quieres más espacio */
+#contacto {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
 button,
 input[type="submit"],
 .card img,
 .card-container .card {
   cursor: pointer;
-  transition: all 0.5s linear;
+  transition: 0.5s linear;
   }
 
 button:hover {
@@ -137,11 +150,15 @@ section[id] {
   padding: 10px; /* Este era el valor que tenías en el enlace, lo ponemos aquí */
 }
 
+.ulli {
+  line-height: 2;
+}
+
 
 /* Hero Section */
 .hero {
   position: relative;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,7 +255,7 @@ section[id] {
   margin: 40px auto;
   background-color: #f7f7f7; /* Un gris muy claro para el fondo de la sección */
   color: #333333; /* Color de texto oscuro para que se lea mejor */
-  border-radius: 8px; /* Un toque moderno con bordes redondeados */
+  border-radius: 8px; /*Un toque moderno con bordes redondeados*/
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -282,6 +299,7 @@ section[id] {
 
 .content-article p {
   line-height: 1.6;
+  margin-top: 10px;
   margin-bottom: 15px;
 }
 
@@ -354,10 +372,10 @@ section[id] {
 .contact-section form {
   background: var(--color-secundario);
   padding: 30px;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   box-shadow: 0 4px 10px rgba(2 2 2 / 58%);
   color: var(--color-texto-claro);
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -451,6 +469,64 @@ footer {
   background-color: var(--color-principal);
 }
 
+/*VER DETAILS SUMMARY/*
+
+/* Estilo para que el bloque de details se sienta más moderno */
+details {
+  border: 1px solid rgba(24, 56, 94, 0.1);
+  border-radius: 8px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+}
+
+/* El título (summary) siempre visible */
+details summary {
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  list-style: none; /* Quita la flechita fea por defecto */
+  display: flex;
+  align-items: center;
+  color: var(--color-principal);
+}
+
+/* Añadimos una flechita personalizada con CSS */
+details summary::before {
+  content: '▶';
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+  font-size: 0.8em;
+}
+
+/* Rotamos la flechita cuando se abre */
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/* --- LA ANIMACIÓN DEL CONTENIDO --- */
+/* Cuando el details está abierto, animamos lo que hay adentro */
+details[open] p, 
+details[open] ul {
+  animation: fadeDown 0.4s ease-out forwards;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*VER DETAILS SUMMARY/*
+
+
 /* Media Query para escritorio */
 @media (min-width: 768px) {
   .main-header {
@@ -479,6 +555,10 @@ footer {
     padding: 5px 10px;
   }
 
+.hero {
+  height: 100vh;
+}
+
   .hero-text h2 {
     font-size: 4em;
   }
@@ -505,6 +585,63 @@ footer {
     width: 30%;
   }
 
+
+/*VER DETAILS SUMMARY/*
+
+/* Estilo para que el bloque de details se sienta más moderno */
+details {
+  border: 1px solid rgba(24, 56, 94, 0.1);
+  border-radius: 8px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+}
+
+/* El título (summary) siempre visible */
+details summary {
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  list-style: none; /* Quita la flechita fea por defecto */
+  display: flex;
+  align-items: center;
+  color: var(--color-principal);
+}
+
+/* Añadimos una flechita personalizada con CSS */
+details summary::before {
+  content: '▶';
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+  font-size: 0.8em;
+}
+
+/* Rotamos la flechita cuando se abre */
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/* --- LA ANIMACIÓN DEL CONTENIDO --- */
+/* Cuando el details está abierto, animamos lo que hay adentro */
+details[open] p, 
+details[open] ul {
+  animation: fadeDown 0.4s ease-out forwards;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*VER DETAILS SUMMARY/*
 
 /* Aca pongo los frames para la animacion de la imagen grande */
   @keyframes blurAnimation {
